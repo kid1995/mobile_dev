@@ -19,3 +19,6 @@ samples, guidance on mobile development, and a full API reference.
 
 Pass arguments to a named route:
 https://flutter.dev/docs/cookbook/navigation/navigate-with-arguments
+
+Create tab in Flutter:
+https://willowtreeapps.com/ideas/how-to-use-flutter-to-build-an-app-with-bottom-navigation

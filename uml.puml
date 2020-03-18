@@ -1,0 +1,73 @@
+@startuml
+set namespaceSeparator ::
+
+class "flutterapp::family_schedule.dart::FamilySchedule" {
+  {static} +String routeName
+  +State createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "flutterapp::family_schedule.dart::FamilySchedule"
+
+class "flutterapp::family_schedule.dart::_FamilyScheduleState" {
+  -int _currentIndex
+  -List<Widget> _children
+  +Widget build()
+  +void onTabTapped()
+}
+
+"flutter::src::widgets::framework.dart::State<T>" <|-- "flutterapp::family_schedule.dart::_FamilyScheduleState"
+
+class "flutterapp::home_widget.dart::FinancialOverview" {
+  {static} +String routeName
+  +State createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "flutterapp::home_widget.dart::FinancialOverview"
+
+class "flutterapp::home_widget.dart::_FinancialOverviewState" {
+  -int _currentIndex
+  -List<Widget> _children
+  +Widget build()
+  +void onTabTapped()
+}
+
+"flutter::src::widgets::framework.dart::State<T>" <|-- "flutterapp::home_widget.dart::_FinancialOverviewState"
+
+class "flutterapp::main.dart::MyApp" {
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::StatelessWidget" <|-- "flutterapp::main.dart::MyApp"
+
+class "flutterapp::main.dart::HomeScreen" {
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::StatelessWidget" <|-- "flutterapp::main.dart::HomeScreen"
+
+class "flutterapp::placeholder_widget.dart::PlaceholderWidget" {
+  +Color color
+  +Widget build()
+}
+
+"flutterapp::placeholder_widget.dart::PlaceholderWidget" o-- "dart::ui::Color"
+"flutter::src::widgets::framework.dart::StatelessWidget" <|-- "flutterapp::placeholder_widget.dart::PlaceholderWidget"
+
+class "flutterapp::shopping_list.dart::ShoppingList" {
+  {static} +String routeName
+  +State createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "flutterapp::shopping_list.dart::ShoppingList"
+
+class "flutterapp::shopping_list.dart::_ShoppingListState" {
+  -int _currentIndex
+  -List<Widget> _children
+  +Widget build()
+  +void onTabTapped()
+}
+
+"flutter::src::widgets::framework.dart::State<T>" <|-- "flutterapp::shopping_list.dart::_ShoppingListState"
+
+
+@enduml
