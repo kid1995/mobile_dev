@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
               },
             ),
             RaisedButton(
-              child: Text("Family Schedule"),
+              child: Text("Schedule organizer"),
               onPressed: () {
                 Navigator.pushNamed(
                   context,

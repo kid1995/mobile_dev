@@ -21,7 +21,7 @@ class _FamilyScheduleState extends State<FamilySchedule> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Shopping List'),
+        title: Text("Schedule organizer"),
       ),
       body: _children[_currentIndex], // new
       bottomNavigationBar: BottomNavigationBar(
